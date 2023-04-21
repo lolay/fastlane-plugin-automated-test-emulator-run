@@ -22,7 +22,7 @@ module Fastlane
 
             if params[:verbose] 
               # Checking for output files
-              if File.exists?(avd_controller.output_file.path) 
+              if File.exist?(avd_controller.output_file.path) 
                 UI.message([
                   "Successfully created tmp output file for AVD:", 
                   avd_schemes[i].avd_name + ".", 
@@ -169,7 +169,7 @@ module Fastlane
               for i in 0...avd_schemes.length
                 if params[:verbose] 
                   # Display AVD output
-                  if (File.exists?(avd_controllers[i].output_file.path))
+                  if (File.exist?(avd_controllers[i].output_file.path))
                     UI.message(["Displaying log for AVD:", avd_schemes[i].avd_name].join(" ").red)
                     UI.message(avd_controllers[i].output_file.read.blue)
                   end
@@ -222,7 +222,7 @@ module Fastlane
 
               if params[:verbose]
                 # Display AVD output
-                if (File.exists?(avd_controllers[i].output_file.path))
+                if (File.exist?(avd_controllers[i].output_file.path))
                   UI.message("Displaying log from AVD to console:".green)
                   UI.message(avd_controllers[i].output_file.read.blue)
 

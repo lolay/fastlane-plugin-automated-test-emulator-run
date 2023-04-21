@@ -117,7 +117,7 @@ module Fastlane
         end
 
         def self.read_avd_setup(params)
-          if File.exists?(File.expand_path("#{params[:AVD_setup_path]}"))
+          if File.exist?(File.expand_path("#{params[:AVD_setup_path]}"))
             file = File.open(File.expand_path("#{params[:AVD_setup_path]}"), "rb")
             json = file.read
             file.close

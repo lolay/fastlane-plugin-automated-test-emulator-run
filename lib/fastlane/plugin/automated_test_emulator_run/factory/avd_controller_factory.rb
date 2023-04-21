@@ -85,7 +85,7 @@ module Fastlane
             sh_create_avd_additional_options].join(" ")
 
           avd_controller.output_file = Tempfile.new('emulator_output')
-          avd_output = File.exists?(avd_controller.output_file) ? ["&>", avd_controller.output_file.path, "&"].join("") : "&>/dev/null &"
+          avd_output = File.exist?(avd_controller.output_file) ? ["&>", avd_controller.output_file.path, "&"].join("") : "&>/dev/null &"
           
           avd_controller.command_start_avd = [
            sh_launch_emulator_binary, 
