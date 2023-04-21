@@ -1,6 +1,6 @@
-# automated_test_emulator_run_next plugin
+# automated_test_emulator_run_lolay plugin
 
-[![fastlane Plugin Badge](https://rawcdn.githack.com/fastlane/fastlane/master/fastlane/assets/plugin-badge.svg)](https://rubygems.org/gems/fastlane-plugin-automated_test_emulator_run_next)
+[![fastlane Plugin Badge](https://rawcdn.githack.com/fastlane/fastlane/master/fastlane/assets/plugin-badge.svg)](https://rubygems.org/gems/fastlane-plugin-automated_test_emulator_run_lolay)
 
 ## About this fork
 
@@ -14,10 +14,10 @@ Starts any number of AVDs. AVDs are created and configured automatically accordi
 
 This project is a [fastlane](https://github.com/fastlane/fastlane) plugin.
 
-1. To get started with `fastlane-plugin-automated_test_emulator_run_next`, add it to your project by running:
+1. To get started with `fastlane-plugin-automated_test_emulator_run_lolay`, add it to your project by running:
 
   ```bash
-  fastlane add_plugin automated_test_emulator_run_next
+  fastlane add_plugin automated_test_emulator_run_run
   ```
 2. Create your \*.JSON config file to create AVD launch plan according to schema below/provided example.
 
